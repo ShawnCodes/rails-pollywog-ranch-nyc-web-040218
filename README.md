@@ -8,7 +8,11 @@ Help Frog Rancher Darryl categorize and track all the ponds, frogs, and tadpoles
 
 ## Background
 
-After speaking with Darryl, he has informed us that he has several ponds on his ranch. Each pond has different frogs that live there. Some of those frogs have tadpole babies. The frogs all have the ability to have tadpoles at any given time, and the tadpoles have the ability to metamorphose into frogs at any time.
+<!-- After speaking with Darryl, he has informed us that he has several ponds on his ranch.
+Each pond has different frogs that live there.
+Some of those frogs have tadpole babies.
+The frogs all have the ability to have tadpoles at any given time,  -->
+and the tadpoles have the ability to metamorphose into frogs at any time. (this means create a frog with same attributes, and delete tadpole)
 
 ## Example
 
@@ -17,13 +21,13 @@ Here's a [demo](http://the-pollywog-ranch.herokuapp.com) of what we're aiming fo
 ## Instructions
 
 #### Getting Started
-* Run `bundle install` then `rspec` to see what course to take. Keep in mind that, for the association of `tadpoles` belonging to a `pond` through a `frog`, you'll have to [delegate](http://stackoverflow.com/a/11457714).
+<!-- * Run `bundle install` then `rspec` to see what course to take. Keep in mind that, for the association of `tadpoles` belonging to a `pond` through a `frog`, you'll have to [delegate](http://stackoverflow.com/a/11457714). -->
 * Take a look at the tests in `spec/models` before writing your migrations.
 * Once your migrations are done, start on the associations in your models.
 * Once the associations are passing, you'll be modifying three files:
 
-  1. `app/controllers/tadpoles_controller.rb`
-    * You'll add an action, `#metamorphose`, to this controller
+  <!-- 1. `app/controllers/tadpoles_controller.rb`
+    * You'll add an action, `#metamorphose`, to this controller -->
   2. `config/routes.rb`
     * Here you'll allow a form to post to `/tadpoles/:id/metamorphose`
     * This should route the request to the `TadpolesController`'s `#metamorphose` action
